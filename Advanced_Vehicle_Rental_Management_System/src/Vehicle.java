@@ -21,8 +21,14 @@ public abstract class Vehicle {
     public double getBaseRentalRate(){
         return baseRentalRate;
     }
-    public boolean isAvailable(){
+    public boolean isAvailableForRental(){
         return isAvailable;
+    }
+
+    public  boolean setAvailable(boolean available)
+    {
+        this.isAvailable = available;
+        return this.isAvailable;
     }
 
     public abstract double calculateRentalCost(int days);
